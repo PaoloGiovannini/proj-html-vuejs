@@ -114,8 +114,7 @@ export default{
         }
         h1:last-child{
             color: variables.$button-color;
-            background-color: #d5e7e8;
-            padding: 7px;
+            @include mixins.text-bg
         }
         .button-border{
             @include mixins.button-border;

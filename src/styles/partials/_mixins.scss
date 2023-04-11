@@ -10,4 +10,8 @@
     border-radius: 4px;
     border: 2px solid variables.$button-color;
 }
-  
+
+@mixin text-bg{
+    background-color: #d5e7e8;
+    padding: 7px;
+}

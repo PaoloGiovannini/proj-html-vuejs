@@ -1,8 +1,10 @@
 <script>
 import PageHeader from './components/PageHeader.vue';
+import PageMain from './components/PageMain.vue';
 export default{
   components:{
-    PageHeader
+    PageHeader,
+    PageMain
   },
   data(){
     return{
@@ -13,8 +15,14 @@ export default{
 </script>
 
 <template>
-<PageHeader
-  :navbar="this.navbar"/>
+  <header>
+    <PageHeader
+      :navbar="this.navbar"/>
+  </header>
+  <main>
+    <PageMain/>
+  </main>
+
 </template>
 
 <style lang="scss">
