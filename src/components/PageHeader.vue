@@ -1,8 +1,12 @@
 <script>
+import ButtonTouch from './MiscellaneousComponents/ButtonTouch.vue'
 export default{
     name: 'PageHeader',
     props: {
         navbar: Array
+    },
+    components:{
+        ButtonTouch,
     }
 }
 </script>
@@ -32,11 +36,24 @@ export default{
         <div>
             <img src="../assets/logo.PNG" alt="logo nexgen">
         </div>
-        <div>
+        <div class="d-flex align-center">
             <a v-for="(element,index) in navbar" href="#">{{ element }}</a>
+            <ButtonTouch/>
         </div>
     </div>
-
+    <div id="jumbo-text">
+        <div class="d-flex align-center justify-center">
+            <h1>Ready</h1>
+            <h1>Team</h1>
+        </div>
+        <p>No matter what your company needs, <br>we will be ready to assist you in the best possible way.</p>
+        <div class="d-flex justify-center">
+            <ButtonTouch/>
+            <div class="button-border">
+                <span>READ MORE</span>
+            </div>
+        </div>
+    </div>
 </div>
 
 
@@ -44,12 +61,12 @@ export default{
 
 <style scoped lang="scss">
 @use '../styles/partials/variables';
+@use '../styles/partials/mixins';
 #info{
     background-color: variables.$bg-info;
     color: variables.$text-grey;
     padding: 10px 0px;
     span{
-        
         margin-right: 20px ;
     }
     i{
@@ -74,7 +91,38 @@ export default{
         text-decoration: none;
         color: black;
     }
+    #jumbo-text{
+        width: 400px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
 
+        p{
+            margin-top: 20px;
+            margin-bottom: 35px;
+            color: variables.$text-grey;
+            text-align: center;
+        }
+        h1{
+            font-size: 50px;
+            font-weight: 900;
+        }
+        h1:first-child{
+            color: variables.$bg-info ;
+            margin-right: 10px;
+        }
+        h1:last-child{
+            color: variables.$button-color;
+            background-color: #d5e7e8;
+            padding: 7px;
+        }
+        .button-border{
+            @include mixins.button-border;
+            margin-left: 20px;
+            color: variables.$button-color;
+        }
+    }
 }
 
 </style>
