@@ -113,6 +113,8 @@ export default{
     #container-card{
         flex-wrap: wrap;
         padding-top: 30px;
+        margin-left: -20px;
+        margin-right: -20px;
         .card{
             width: calc(100% / 3 - 40px);
             background-color: white;

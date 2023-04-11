@@ -65,7 +65,9 @@ export default{
         </div>
     </div>
 
-
+    <div>
+        <img src="../../assets/bullets.png" alt="trama a pois" class="bullets">
+    </div>
 </section>
 </template>
 
@@ -84,7 +86,7 @@ export default{
     }
     #text-about{
         color: variables.$text-aqua;
-
+        font-weight: bold;
     }
     .info-company:first-child{
         padding-top: 150px;
