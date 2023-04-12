@@ -90,6 +90,7 @@ export default{
     }
     .info-company:first-child{
         padding-top: 150px;
+        padding-bottom: 70px;
     }
     .info-company{
         width: 50%;

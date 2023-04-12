@@ -91,7 +91,10 @@ export default{
     a:first-of-type{
         @include mixins.text-bg;
     }
-    .card{
+    .cards{
+        margin-left: -20px;
+        margin-right: -20px;
+        .card{
         width: calc(100% / 3 - 40px);
         margin: 20px;
         position: relative;
@@ -112,6 +115,7 @@ export default{
             font-weight: bold;
         }
     }
+}
 
 }
 
