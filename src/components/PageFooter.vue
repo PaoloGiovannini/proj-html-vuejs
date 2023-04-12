@@ -47,6 +47,17 @@ export default{
             </div>
         </div>
     </section>
+    <section id="footer-down">
+        <div class="container">
+            <div class="d-flex justify-between">
+                <span>Enjoy the low price. We are tracking any intention of piracy.</span>
+                <div>
+                    <span>© {{ new Date().getFullYear() }} NEXGEN is Proudly Powered by </span>
+                    <a href="#">Codings</a>
+                </div>
+            </div>
+        </div>
+    </section>
 </template>
 
 <style scoped lang="scss">
@@ -95,6 +106,19 @@ export default{
         }
         }
 
+    }
+}
+#footer-down{
+    background-color: #0d0d11;
+    .container{
+        padding: 30px 0px;
+        span{
+            color: variables.$text-grey;
+        }
+        a{
+            text-decoration: none;
+            color: variables.$text-aqua;
+        }
     }
 }
 
