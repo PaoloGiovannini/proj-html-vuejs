@@ -3,6 +3,7 @@ import SectionBusiness from './MiscellaneousComponents/SectionBusiness.vue';
 import SectionCompany from './MiscellaneousComponents/SectionCompany.vue';
 import SectionProjects from './MiscellaneousComponents/SectionProjects.vue';
 import SectionResults from './MiscellaneousComponents/SectionResults.vue';
+import SectionForm from './MiscellaneousComponents/SectionForm.vue';
 export default{
     name: 'PageMain',
     components:{
@@ -10,6 +11,7 @@ export default{
         SectionCompany,
         SectionProjects,
         SectionResults,
+        SectionForm,
 
     },
     data(){
@@ -28,6 +30,7 @@ export default{
 <SectionProjects
     :actions ="this.actionsAndProjects"/>
 <SectionResults/>
+<SectionForm/>
 </template>
 
 <style scoped lang="scss">
