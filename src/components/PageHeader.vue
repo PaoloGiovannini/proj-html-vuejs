@@ -46,7 +46,7 @@ export default{
             <h1>Ready</h1>
             <h1>Team</h1>
         </div>
-        <p>No matter what your company needs, <br>we will be ready to assist you in the best possible way.</p>
+        <p class="text-center">No matter what your company needs, we will be ready to assist you in the best possible way.</p>
         <div class="d-flex justify-center">
             <ButtonTouch/>
             <div class="button-border">
@@ -102,7 +102,6 @@ export default{
             margin-top: 20px;
             margin-bottom: 35px;
             color: variables.$text-grey;
-            text-align: center;
         }
         h1{
             font-size: 50px;

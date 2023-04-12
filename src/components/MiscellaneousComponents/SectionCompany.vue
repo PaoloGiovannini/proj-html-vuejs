@@ -106,6 +106,7 @@ export default{
                 padding: 7px;
                 background-color: rgba(3, 132, 132, 0.2);
                 margin-right: 7px;
+                border-radius: 5px;
             }
         }
         img{
