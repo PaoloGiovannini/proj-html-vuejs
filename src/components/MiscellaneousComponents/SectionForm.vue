@@ -84,6 +84,7 @@ export default{
     h2:last-child{
         @include mixins.text-bg;
         color: variables.$button-color;
+        margin-left: 10px;
     }
     input{
         width: 100%;
