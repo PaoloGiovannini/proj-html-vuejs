@@ -13,7 +13,7 @@ export default{
 
 <template>
 <!-- sezione orari, numeri di telefono e social -->
-<div id="info">
+<section id="info">
     <div class="container d-flex justify-between">
         <div>
             <i class="fa-solid fa-clock"></i>
@@ -30,20 +30,23 @@ export default{
         </div>
         
     </div>
-</div>
+</section>
 <!-- fine sezione orari, numeri di telefono e social -->
 
 <!-- inizio jumbotron -->
-<div id="jumbotron">
+<section id="jumbotron">
     <div class="container d-flex justify-between align-center">
         <div>
             <img src="../assets/logo.PNG" alt="logo nexgen">
         </div>
         <!-- voci del menu generate automaticamente con relativo href -->
-        <div class="d-flex align-center">
-            <a v-for="(element,index) in navbar" :href="'#' + element">{{ element.toUpperCase() }}</a>
-            <ButtonTouch/>
-        </div>
+        <nav>
+            <div class="d-flex align-center">
+                <a v-for="(element,index) in navbar" :href="'#' + element">{{ element.toUpperCase() }}</a>
+                <ButtonTouch/>
+            </div>  
+        </nav>
+
         <!-- fine voci del menu generate automaticamente con relativo href -->
     </div>
     <div id="jumbo-text">
@@ -59,7 +62,7 @@ export default{
             </div>
         </div>
     </div>
-</div>
+</section>
 <!-- fine jumbotron -->
 
 

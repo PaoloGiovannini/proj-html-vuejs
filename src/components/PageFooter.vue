@@ -79,7 +79,7 @@ export default{
             <div class="d-flex justify-between">
                 <span>Enjoy the low price. We are tracking any intention of piracy.</span>
                 <div>
-                    <span>© {{ new Date().getFullYear() }} NEXGEN is Proudly Powered by </span>
+                    <span>&#169; {{ new Date().getFullYear() }} NEXGEN is Proudly Powered by </span>
                     <a href="#">Codings</a>
                 </div>
             </div>
