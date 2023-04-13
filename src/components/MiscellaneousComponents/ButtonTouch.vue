@@ -8,7 +8,7 @@ export default{
 <template>
 
     <div class="button">
-        <span>GET IN TOUCH</span>
+        <a href="#info-company">GET IN TOUCH</a>
     </div>
 
 
@@ -22,6 +22,10 @@ export default{
 .button{
    
     @include mixins.button;
+    a{
+        text-decoration: none;
+        color: white;
+    }
 }
 
 </style>
