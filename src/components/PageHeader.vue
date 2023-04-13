@@ -72,6 +72,10 @@ export default{
     i{
         padding: 0px 10px;
     }
+    .fa-facebook-f:hover, .fa-twitter:hover, .fa-linkedin-in:hover{
+        color: white ;
+        cursor: pointer;
+    }
 
 
 }
@@ -119,6 +123,9 @@ export default{
             @include mixins.button-border;
             margin-left: 20px;
             color: variables.$button-color;
+        }
+        .button-border:hover{
+            color: white;
         }
     }
 }

@@ -138,6 +138,7 @@ export default{
             @include mixins.button-border;
             margin-left: 25px ;
         }
+
     }
 
 }

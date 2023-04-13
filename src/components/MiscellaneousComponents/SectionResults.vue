@@ -115,6 +115,9 @@ export default{
             object-fit: contain;
             filter: brightness(4);
         }
+        img:hover{
+            filter: invert(1);
+        }
     }
 }
 

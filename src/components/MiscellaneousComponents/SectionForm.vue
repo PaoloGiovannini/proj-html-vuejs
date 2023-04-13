@@ -97,6 +97,9 @@ export default{
         line-height: 150px;
         margin-top: 5px;
     }
+    .button:hover{
+    background-color: #00a6a6;
+    }
     .button{
         @include mixins.button;
         display: inline-block;
@@ -146,6 +149,9 @@ export default{
         display: inline-block;
         color: variables.$button-color;
         margin-top: 20px;
+    }
+    .button-border:hover{
+        color: white;
     }
 }
 }

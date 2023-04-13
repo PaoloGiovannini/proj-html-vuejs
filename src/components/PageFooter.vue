@@ -89,6 +89,9 @@ export default{
                 display: inline-block;
                 margin-top: 30px;
             }
+            .button-border:hover{
+                color: white;
+            }
             p,span,i{
                 color: variables.$text-grey;
             }
@@ -102,6 +105,10 @@ export default{
             ul li{
                 list-style: none;
                 padding: 7px 0px;
+                cursor: pointer;
+                i{
+                    margin-right: 8px;
+                }
             }
         }
         }
@@ -110,6 +117,7 @@ export default{
 }
 #footer-down{
     background-color: #0d0d11;
+    position: relative;
     .container{
         padding: 30px 0px;
         span{
@@ -119,6 +127,13 @@ export default{
             text-decoration: none;
             color: variables.$text-aqua;
         }
+    }
+    i{
+        color: white;
+        position: absolute;
+        top: 50%;
+        right: 40px;
+        transform: translate(-50%, -50%);
     }
 }
 

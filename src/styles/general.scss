@@ -36,3 +36,8 @@ body{
 .text-center{
     text-align: center;
 }
+
+.button:hover, .button-border:hover{
+    cursor: pointer;
+    background-color: #00a6a6;
+}

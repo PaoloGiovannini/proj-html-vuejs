@@ -104,6 +104,9 @@ export default{
         color: variables.$button-color;
         @include mixins.text-bg
     }
+    .button:hover{
+    background-color: #00a6a6;
+    }
     .button{
         @include mixins.button
     }
@@ -115,6 +118,11 @@ export default{
         padding-top: 30px;
         margin-left: -20px;
         margin-right: -20px;
+        .card:hover .fa-arrow-right{
+               background-color: #d5e7e8;
+               padding: 10px;
+               border-radius: 50%;
+            }
         .card{
             width: calc(100% / 3 - 40px);
             background-color: white;
