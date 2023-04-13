@@ -35,20 +35,20 @@ export default{
 
 <!-- inizio jumbotron -->
 <section id="jumbotron">
-    <div class="container d-flex justify-between align-center">
+    <nav class="container d-flex justify-between align-center">
         <div>
             <img src="../assets/logo.PNG" alt="logo nexgen">
         </div>
         <!-- voci del menu generate automaticamente con relativo href -->
-        <nav>
+        
             <div class="d-flex align-center">
                 <a v-for="(element,index) in navbar" :href="'#' + element">{{ element.toUpperCase() }}</a>
                 <ButtonTouch/>
             </div>  
-        </nav>
+
 
         <!-- fine voci del menu generate automaticamente con relativo href -->
-    </div>
+    </nav>
     <div id="jumbo-text">
         <div class="d-flex align-center justify-center">
             <h1>Ready</h1>
