@@ -111,6 +111,9 @@ export default{
         .card{
             width: calc(100% / 4 - 40px);
             margin: 0px 20px;
+            i{
+                margin-right: 8px;
+            }
             p{
                 margin: 15px 0px;
             }
@@ -139,9 +142,7 @@ export default{
                 list-style: none;
                 padding: 7px 0px;
                 cursor: pointer;
-                i{
-                    margin-right: 8px;
-                }
+
             }
         }
         }
