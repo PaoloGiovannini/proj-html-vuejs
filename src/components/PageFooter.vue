@@ -3,7 +3,26 @@ export default{
     name: 'PageFooter',
     props: {
         voices: Array
-    }
+    },
+    data() {
+      return {
+        scTimer: 0,
+        scY: 0,
+      }
+    },
+    mounted() {
+      window.addEventListener('scroll', this.handleScroll);
+    },
+    methods: {
+      handleScroll() {
+        this.scY = window.scrollY;
+      },
+      toTop() {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth"
+        });
+    }}
 
 }
 </script>
@@ -56,6 +75,9 @@ export default{
                     <a href="#">Codings</a>
                 </div>
             </div>
+        </div>
+        <div>
+            <i class="fa-solid fa-chevron-up" v-show="scY > 300" @click="toTop"></i>
         </div>
     </section>
 </template>
@@ -130,10 +152,14 @@ export default{
     }
     i{
         color: white;
-        position: absolute;
-        top: 50%;
-        right: 40px;
-        transform: translate(-50%, -50%);
+        position: fixed;
+        bottom: 10px;
+        right: 20px;
+        z-index: 213123;
+        background-color:rgba(82, 187, 186, 0.8);
+        padding: 20px;
+        border-radius: 50%;
+        cursor: pointer;
     }
 }
 

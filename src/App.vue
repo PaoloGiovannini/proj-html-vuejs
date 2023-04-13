@@ -10,7 +10,7 @@ export default{
   },
   data(){
     return{
-      navbar: ['HOME', 'SERVICES', 'ABOUT', 'PROJECTS', 'RESULTS', ],
+      navbar: ['home', 'services', 'about', 'projects', 'results', ],
       voiceMenu: [
                 {
                   titolo: 'About',

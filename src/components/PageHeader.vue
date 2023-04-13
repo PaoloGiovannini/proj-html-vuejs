@@ -37,7 +37,7 @@ export default{
             <img src="../assets/logo.PNG" alt="logo nexgen">
         </div>
         <div class="d-flex align-center">
-            <a v-for="(element,index) in navbar" href="#">{{ element }}</a>
+            <a v-for="(element,index) in navbar" :href="'#' + element">{{ element.toUpperCase() }}</a>
             <ButtonTouch/>
         </div>
     </div>

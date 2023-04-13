@@ -7,7 +7,7 @@ export default{
 
 <template>
 
-<section id="business-areas">
+<section id="services">
     <div class="container">
         <span id="subtitle">OUR BUSINESS AREAS</span>
         <div class="d-flex align-center">
@@ -84,7 +84,7 @@ export default{
 @use '../../styles/partials/variables';
 @use '../../styles/partials/mixins';
 
- #business-areas{
+ #services{
     background-color: variables.$bg-primary;
     padding: 90px 0px;
     #subtitle{
@@ -122,6 +122,7 @@ export default{
                background-color: #d5e7e8;
                padding: 10px;
                border-radius: 50%;
+               cursor: pointer;
             }
         .card{
             width: calc(100% / 3 - 40px);
