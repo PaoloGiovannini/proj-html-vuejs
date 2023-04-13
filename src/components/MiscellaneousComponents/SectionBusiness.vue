@@ -6,7 +6,7 @@ export default{
 </script>
 
 <template>
-
+<!-- inizio sezione services -->
 <section id="services">
     <div class="container">
         <span id="subtitle">OUR BUSINESS AREAS</span>
@@ -78,6 +78,7 @@ export default{
         </div>
     </div>
 </section>
+<!-- fine sezione services -->
 </template>
 
 <style scoped lang="scss">

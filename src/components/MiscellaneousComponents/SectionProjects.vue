@@ -9,6 +9,7 @@ export default{
 </script>
 
 <template>
+<!-- sezione projects -->
 <section id="projects">
     <div class="container text-center">
         <span id="text-title">WE DO MORE FOR EVERYONE</span>
@@ -70,7 +71,7 @@ export default{
 
     </div>
 </section>
-
+<!-- fine sezione projects -->
 </template>
 
 <style scoped lang="scss">

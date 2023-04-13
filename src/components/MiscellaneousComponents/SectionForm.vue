@@ -6,6 +6,7 @@ export default{
 </script>
 
 <template>
+    <!-- sezione form -->
     <section id="info-company">
         <div class="container">
             <div class="d-flex">
@@ -63,6 +64,7 @@ export default{
             </div>
         </div>
     </section>
+    <!-- fine sezione form -->
 </template>
 
 <style scoped lang="scss">

@@ -9,6 +9,7 @@ export default{
 </script>
 
 <template>
+<!-- sezione about -->
 <section id="about">
     <div>
         <img src="../../assets/bullets.png" alt="trama a pois" class="bullets">
@@ -69,6 +70,7 @@ export default{
         <img src="../../assets/bullets.png" alt="trama a pois" class="bullets">
     </div>
 </section>
+<!-- sezione about -->
 </template>
 
 <style scoped lang="scss">

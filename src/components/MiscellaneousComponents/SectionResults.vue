@@ -6,6 +6,7 @@ export default{
 </script>
 
 <template>
+<!-- sezione results -->
 <section id="results">
     <div id="number-results">
         <div class="container text-center">
@@ -35,6 +36,7 @@ export default{
 
         </div>
     </div>
+    <!-- container logo -->
     <div id="logos">
         <div class="container">
             <div class="d-flex">
@@ -59,8 +61,9 @@ export default{
             </div>
         </div>
     </div>
+<!-- container logo -->
 </section>
-
+<!-- fine sezione results -->
 </template>
 
 <style scoped lang="scss">

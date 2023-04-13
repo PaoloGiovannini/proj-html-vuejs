@@ -28,8 +28,10 @@ export default{
 </script>
 
 <template>
+    <!-- sezione superiore del footer -->
     <section id="footer-up">
         <div class="container">
+            <!-- inizio elenco carte -->
             <div class="d-flex cards">
                 <div class="card">
                     <img src="../assets/logo.PNG" alt="logo nexgen">
@@ -54,6 +56,7 @@ export default{
                     </div>
                     <span class="button-border">GET IN TOUCH</span>
                 </div>
+                <!-- carte generate automaticamente dai valori passati attraverso le props -->
                 <div v-for="voice in voices" class="card bg">
                     <h3>{{ voice.titolo }}</h3>
                     <ul>
@@ -63,9 +66,14 @@ export default{
                         </li>
                     </ul>    
                 </div>
+                <!--fine carte generate automaticamente dai valori passati attraverso le props -->
             </div>
+            <!-- fine elenco carte -->
         </div>
     </section>
+    <!-- fine sezione superiore del footer -->
+
+    <!-- sezione inferiore del footer -->
     <section id="footer-down">
         <div class="container">
             <div class="d-flex justify-between">
@@ -76,10 +84,13 @@ export default{
                 </div>
             </div>
         </div>
+        <!-- freccia scrollToTop -->
         <div>
             <i class="fa-solid fa-chevron-up" v-show="scY > 300" @click="toTop"></i>
         </div>
+        <!-- fine freccia scrollToTop -->
     </section>
+    <!-- fine sezione inferiore del footer -->
 </template>
 
 <style scoped lang="scss">
